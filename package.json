@@ -1,0 +1,43 @@
+{
+  "name": "@decent-bet/solido-provider-web3",
+  "version": "1.0.0",
+  "description": "Solido Web3 provider",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jasmine-ts \"spec/**/*.spec.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decent-bet/solido-provider-web3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decent-bet/solido-provider-web3/issues"
+  },
+  "homepage": "https://github.com/decent-bet/solido-provider-web3#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.12",
+    "@types/node": "^11.12.0",
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "eslint": "^5.15.3",
+    "jasmine": "^3.4.0",
+    "jasmine-ts": "^0.3.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000",
+    "@decent-bet/solido": "1.0.0-beta.1"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.1",
+    "web3": "1.0.0-beta.54",
+    "web3-core-helpers": "^1.0.0-beta.54"
+  },
+  "peerDependencies": {
+    "@decent-bet/solido": "1.0.0-beta.1"
+  }
+}
