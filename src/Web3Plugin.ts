@@ -31,8 +31,10 @@ export class Web3Plugin extends SolidoProvider implements SolidoContract {
             this.contractImport.raw.abi as any,
             this.contractImport.address[network]
         )
-        this.address = this.contractImport.address[network];
-        this.web3.eth.accounts.wallet.add(privateKey);
+        this.address = this.contractImport.address[network];        
+        if (privateKey) {
+            this.web3.eth.accounts.wallet.add(privateKey);
+        }        
     }
 
     async prepareSigning(methodCall: any, options: IMethodOrEventCall, args: any[]):  Promise<SolidoSigner> {
