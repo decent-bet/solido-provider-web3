@@ -1,6 +1,6 @@
 {
   "name": "@decent-bet/solido-provider-web3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Solido Web3 provider",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -30,7 +30,7 @@
     "nodemon": "^1.18.10",
     "ts-node": "^8.0.3",
     "typescript": "^3.3.4000",
-    "@decent-bet/solido": "1.0.0-beta.2"
+    "@decent-bet/solido": "1.0.0-beta.5"
   },
   "dependencies": {
     "rxjs": "^6.5.1",
@@ -38,6 +38,6 @@
     "web3-core-helpers": "^1.0.0-beta.54"
   },
   "peerDependencies": {
-    "@decent-bet/solido": "1.0.0-beta.1"
+    "@decent-bet/solido": "1.0.0-beta.5"
   }
 }
