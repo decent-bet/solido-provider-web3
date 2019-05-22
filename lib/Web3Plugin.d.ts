@@ -1,4 +1,4 @@
-import { IMethodOrEventCall, EventFilter, SolidoProviderType } from '@decent-bet/solido';
+import { IMethodOrEventCall, EventFilter, ProviderInstance, SolidoProviderType } from '@decent-bet/solido';
 import { Web3Settings } from './Web3Settings';
 import { SolidoProvider } from '@decent-bet/solido';
 import { SolidoContract, SolidoSigner } from '@decent-bet/solido';
@@ -11,6 +11,8 @@ export declare class Web3Plugin extends SolidoProvider implements SolidoContract
     private privateKey;
     getProviderType(): SolidoProviderType;
     onReady<T>(settings: T & Web3Settings): void;
+    connect(): void;
+    setInstanceOptions(settings: ProviderInstance): void;
     prepareSigning(methodCall: any, options: IMethodOrEventCall, args: any[]): Promise<SolidoSigner>;
     getAbiMethod(name: string): object;
     callMethod(name: string, args: any[]): any;
