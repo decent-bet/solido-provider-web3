@@ -1,6 +1,6 @@
 {
   "name": "@decent-bet/solido-provider-web3",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Solido Web3 provider",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -8,7 +8,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jasmine-ts \"spec/**/*.spec.ts\""
+    "test": "jasmine-ts \"spec/**/*.spec.ts\"",
+    "prepublishOnly": "npm run build",
+    "build": "rm -rf lib && tsc -p .",
+    "lint": "eslint --fix ."
   },
   "repository": {
     "type": "git",

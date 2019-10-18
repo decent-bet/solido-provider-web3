@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "esnext",
+        "module": "commonjs",
         "target": "es2016",
         "moduleResolution": "node",
         "sourceMap": false,
@@ -14,10 +14,8 @@
         "declaration": true
         
     },
-    "exclude": ["./node_modules", "**/*.spec.ts", "examples", "tests"],
+    "exclude": ["node_modules", "**/*.spec.ts", "spec"],
     "include": [
-        "./src",
-        "./tests",
-        "jest.config.js"
+        "src"
     ]
 }
